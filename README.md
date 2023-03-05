@@ -2,7 +2,7 @@
  * @Author: Vincent Young
  * @Date: 2022-10-18 07:32:29
  * @LastEditors: Vincent Young
- * @LastEditTime: 2023-02-28 18:14:40
+ * @LastEditTime: 2023-03-03 02:30:52
  * @FilePath: /DeepLX/README.md
  * @Telegram: https://t.me/missuo
  * 
@@ -38,6 +38,23 @@ bash <(curl -Ls https://cpp.li/deeplx)
 ```
 
 ### Run on Mac
+#### Homebrew (Recommended)
+```bash
+brew tap owo-network/brew
+brew install deeplx
+brew services start owo-network/brew/deeplx
+
+# Update to the latest version
+brew update
+brew upgrade deeplx
+brew services restart owo-network/brew/deeplx
+
+# View the currently installed version
+brew list --versions deeplx
+```
+
+
+#### Manual
 1. Download  the latest release of DeepL X.
 ```bash
 sudo mv deeplx_darwin_amd64 /usr/local/bin/deeplx
@@ -78,6 +95,7 @@ systemctl enable deeplx
 2. Click on **Developer Settings** in the bottom left corner. **Enable Beta experimental features**.
 
 3. Set the URL.
+
 ![0779ecf8c7d7d1bee532b](https://missuo.ru/file/0779ecf8c7d7d1bee532b.png)
 
 ## Backup the Docker Image of zu1k
